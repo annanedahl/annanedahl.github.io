@@ -2,7 +2,7 @@
 
   body {
     font-size: 22px;
-    color:#002a14;
+    color: #002a14;
     background-color:#e1e0db;
     text-align: center;
     font-family: 'Oswald', sans-serif;
@@ -10,13 +10,11 @@
 
 }
 
-@media (min-width: 415px) {
   body {
     font-size: 36px;
-    color:black;
+    color: #002a14;
     background-color:#e1e0db;
     text-align: center;
     font-family: 'Oswald', sans-serif;
 
   }
-}
