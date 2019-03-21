@@ -1,3 +1,5 @@
+var mymap;
+
 (function() {
 /*
  * Workaround for 1px lines appearing in some browsers due to fractional transforms
@@ -37,7 +39,7 @@ window.addEventListener("load", () => {
 			//mymap.panTo(L.latLng(position.coords.latitude, position.coords.longitude));
 		});
     }
-	var mymap = L.map("map", {
+	mymap = L.map("map", {
         crs: crs,
         continuousWorld: true,
         center: [55.7, 12.6], // Set center location

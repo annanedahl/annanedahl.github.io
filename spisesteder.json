@@ -5,20 +5,21 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [55.685200, 12.538576]
+        "coordinates": [12.538576,55.685200]
       },
       "properties": {
         "menu": "https://jaggerfastfood.com/menu",
         "adresse": "Falkoner Alle 84, 2000 Frederiksberg",
         "billede": "https://migogodense.dk/wp-content/uploads/2017/12/Jagger-800x480.jpg",
-        "navn": "jaggerfastfood"
+        "navn": "jaggerfastfood",
+        "popupContent": "This is where the Rockies play!"
       }
     },
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [55.682454, 12.551479]
+        "coordinates": [12.551479,55.682454]
       },
       "properties": {
         "menu": "https://www.overfor.dk/menukort/",
@@ -32,7 +33,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [55.682615, 12.550537]
+        "coordinates": [12.550537,55.682615]
       },
       "properties": {
         "menu": "http://www.katosushi.dk/menu/",
