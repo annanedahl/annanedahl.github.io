@@ -23,8 +23,8 @@
     width: 95vw;
   }
 
-  img.map {
-    width: 95vw;
+#map {
+    height: 75vh;
   }
 
 

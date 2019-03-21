@@ -4,6 +4,15 @@
   <head>
       <meta charset=utf-8>
       <title>OKAY.dk</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+crossorigin=""></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.4.4/proj4-src.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.min.js" type="text/javascript"></script>
       <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
       <link rel=stylesheet href=style.css>
       <script src="script.js"></script>
@@ -12,18 +21,16 @@
 
   <body>
 
+<header>
     <h1>
       <img src="OKAY.png" alt="Logo">
     </h1>
-
-    <script>
-      var myMessage="Brug rabatkoden Velkommen15";
-      console.log(myMessage);
-    </script>
-    <button onclick="alert (myMessage);">Klik her for rabatkode</button>
-
     <p> Med OKAY kan du hurtigt finde de bedste spisesteder tæt på dig! </p>
-    <p>&nbsp</p>
+</header>
+
+<div id="map"></div>
+
+
 
 
 
