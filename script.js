@@ -18,7 +18,7 @@ if (window.navigator.userAgent.indexOf('Chrome') > -1) {
     });
 }
 
-var token = "F5d5ba90c1c3f57ad003001e7ae87821";
+var token = "894c843587a3bdec095d940dd9144c7a";
 var attribution = '&copy; <a target="_blank" href="https://download.kortforsyningen.dk/content/vilk%C3%A5r-og-betingelser">Styrelsen for Dataforsyning og Effektivisering</a>';
 
 // Make the map object using the custom projection
