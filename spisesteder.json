@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [55.685200, 12.538576]
+      },
+      "properties": {
+        "menu": "https://jaggerfastfood.com/menu",
+        "adresse": "Falkoner Alle 84, 2000 Frederiksberg",
+        "billede": "https://migogodense.dk/wp-content/uploads/2017/12/Jagger-800x480.jpg",
+        "navn": "jaggerfastfood"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [55.682454, 12.551479]
+      },
+      "properties": {
+        "menu": "https://www.overfor.dk/menukort/",
+        "adresse":"Rosenørns Alle 32, 1970 Frederiksberg",
+        "billede":"http://www.pigenogpomfritten.dk/wp-content/uploads/2013/12/overfor_burger-520x346.jpg",
+        "navn":"Cafe Overfor"
+
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [55.682615, 12.550537]
+      },
+      "properties": {
+        "menu": "http://www.katosushi.dk/menu/",
+        "adresse":"Rosenørns Alle 38, 1970 Frederiksberg",
+        "billede":"http://lifestylepubs.wordpress.s3-us-west-2.amazonaws.com/app/uploads/prod/sites/2/2015/03/Schneider-3-1200x500.jpg",
+        "navn":"Kato Sushi"
+      }
+    }
+
+  ]
+}
