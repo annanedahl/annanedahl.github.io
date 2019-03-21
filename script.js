@@ -18,7 +18,7 @@ if (window.navigator.userAgent.indexOf('Chrome') > -1) {
     });
 }
 
-var token = "e66bfbb40256177e56f7a5b64b14f73b";
+var token = "F5d5ba90c1c3f57ad003001e7ae87821";
 var attribution = '&copy; <a target="_blank" href="https://download.kortforsyningen.dk/content/vilk%C3%A5r-og-betingelser">Styrelsen for Dataforsyning og Effektivisering</a>';
 
 // Make the map object using the custom projection
@@ -95,8 +95,7 @@ window.addEventListener("load", () => {
 
 	mymap.locate({
 		setView: true,
-		maxZoom: 16,
-		enableHighAccuracy: true
+		maxZoom: 16
 	});
 
 	let marker = L.circle(L.latLng(55.7, 12.6), 10).addTo(mymap);
