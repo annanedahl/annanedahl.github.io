@@ -26,3 +26,12 @@
   img.map {
     width: 95vw;
   }
+
+
+  a {
+  color: #002a14;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  background-color: white;
+  font-size: 60px;
+}
