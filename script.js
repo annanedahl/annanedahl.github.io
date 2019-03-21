@@ -111,7 +111,15 @@ window.addEventListener("load", () => {
 	    console.error(e.message);
 	}
 	mymap.on('locationerror', onLocationError);
+
+
+  fetch("spisesteder.json").then(function (res) {
+    return res.json();
+  }).then(function (data) {
+    L.geoJSON(data).addTo(mymap);
+  });
 });
+
 
 })();
 //mapbox token
