@@ -116,7 +116,7 @@ window.addEventListener("load", () => {
   fetch("spisesteder.json").then(function (res) {
     return res.json();
   }).then(function (data) {
-    L.geoJSON(data).addTo(mymap);
+    L.geoJSON(data.features).addTo(mymap);
   });
 });
 
