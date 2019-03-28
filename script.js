@@ -48,6 +48,7 @@ window.addEventListener("load", () => {
         maxzoom: 13
     });
 
+
     var ortofotowmts = L.tileLayer('https://services.kortforsyningen.dk/orto_foraar?token=' + token + '&request=GetTile&version=1.0.0&service=WMTS&Layer=orto_foraar&style=default&format=image/jpeg&TileMatrixSet=View1&TileMatrix={zoom}&TileRow={y}&TileCol={x}', {
 		minZoom: 0,
         maxZoom: 13,
@@ -60,7 +61,7 @@ window.addEventListener("load", () => {
             else
                 return 'L' + zoomlevel;
         }
-	}).addTo(mymap);
+	});
 
     // Skærmkort [WMTS:topo_skaermkort]
     var toposkaermkortwmts = L.tileLayer.wms('https://services.kortforsyningen.dk/topo_skaermkort', {
@@ -68,7 +69,7 @@ window.addEventListener("load", () => {
         token: token,
         format: 'image/png',
         attribution: attribution
-	});
+	}).addTo(mymap);
 
 	// Hillshade overlay [WMS:dhm]
 	var hillshade = L.tileLayer.wms('https://services.kortforsyningen.dk/dhm', {
@@ -82,8 +83,8 @@ window.addEventListener("load", () => {
 
 	// Define layer groups for layer control
     var baseLayers = {
-        "Ortofoto WMTS": ortofotowmts,
-        "Skærmkort WMTS": toposkaermkortwmts
+        "Skærmkort WMTS": toposkaermkortwmts,
+        "Ortofoto WMTS": ortofotowmts
     };
     var overlays = {
 		"Hillshade": hillshade
@@ -115,10 +116,13 @@ window.addEventListener("load", () => {
 	mymap.on('locationerror', onLocationError);
 
 
+  let spisesteder = [];
   fetch("spisesteder.json").then(function (res) {
     return res.json();
   }).then(function (data) {
-    L.geoJSON(data.features).addTo(mymap);
+    L.geoJSON(data, {
+      onEachFeature: (feature, layer) => spisesteder.push(layer)
+    }).addTo(mymap);
   });
 });
 
