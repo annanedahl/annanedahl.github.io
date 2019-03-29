@@ -121,7 +121,12 @@ window.addEventListener("load", () => {
     return res.json();
   }).then(function (data) {
     L.geoJSON(data, {
-      onEachFeature: (feature, layer) => spisesteder.push(layer)
+      onEachFeature: (feature, layer) => {
+        layer.bindPopup(() => {
+          return feature.properties.navn;
+        });
+        spisesteder.push(layer);
+      }
     }).addTo(mymap);
   });
 });
