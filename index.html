@@ -5,6 +5,10 @@
       <meta charset=utf-8>
       <title>OKAY.dk</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
 integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
 crossorigin=""/>
@@ -22,23 +26,14 @@ crossorigin=""></script>
 
   <body>
 
-<ion-app>
-
-<ion-header>
-    <ion-toolbar>
-      <ion-title>
-        <img src="OKAY.png" alt="Logo">
-      </ion-title>
-    </ion-toolbar>
-    <ion-toolbar>Med OKAY kan du hurtigt finde de bedste spisesteder tæt på dig!</ion-toolbar>
-</ion-header>
-
-<ion-content>
-
-<div id="map"></div>
+      <header>
+        <h1>
+          <img src="OKAY.png" alt="Logo">
+        Med OKAY kan du hurtigt finde de bedste spisesteder tæt på dig!</h1>
+      </header>
 
 
-</ion-content>
+<main id="map"></main>
 
 
 
@@ -60,9 +55,6 @@ crossorigin=""></script>
 
 
 
-
-
-</ion-app>
 
 
 
